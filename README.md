@@ -2,17 +2,13 @@
 <img src="https://github.com/poleonia/Segmentation-Extension-for-Qupath/blob/main/Seg01.png" width="768">
 
 
-This is a QuPath extension for Weighted Circle Fusion(WCF)
+This is a QuPath extension
 
-This is a part of the following paper. Please cite it when you use this project. You will also cite the [CircleNet Journal Paper](https://ieeexplore.ieee.org/document/9585500)
-or [CircleNet Conference Paper](https://link.springer.com/chapter/10.1007/978-3-030-59719-1_4)
 
 ## Build and Install the extension
 
 ### Set up the CircleNet environment
-you can refer the [Circlenet repository](https://github.com/hrlblab/CircleNet) for environment setting up. Please follow the instruction in [INSTALL.md](https://github.com/hrlblab/CircleNet/blob/master/docs/INSTALL2023.md)there.
 
-After that, you should change the environment path in [GLOMainCommand.java](https://github.com/hrlblab/PathVisual/blob/master/src/main/java/qupath/ext/template/GLOMainCommand.java) to your environment path.
 
 ### Building your extension
 Building the extension with Gradle should be pretty easy - you don't even need to install Gradle separately, because the 
@@ -26,8 +22,6 @@ gradlew build
 The built extension should be found inside `build/libs`.
 
 ### Extension Installation
-<img src="https://github.com/hrlblab/PathVisual/blob/master/img/trim.86A575A3-1320-4A70-B5CC-FC0C61F263CA%202.gif" width="768">
-
 You can drag this onto QuPath to install it.
 You'll be prompted to create a user directory if you don't already have one.
 
@@ -45,10 +39,8 @@ The extension here will install a new command `Java extension` under the `Extens
 
 ## Usage
 
-
-<img src="https://github.com/hrlblab/PathVisual/blob/master/img/wcf_show.gif" width="768">
 1.Drag the image into Qupath<br>
-2.Select  `Extensions`  >`Java extension` >  `Run GLO Detection`  from the menu bar.<br>
+2.Select  `Extensions`  >`Java extension` >  `Run GLO Seg`  from the menu bar.<br>
 
 ## How to create a simple extension
 

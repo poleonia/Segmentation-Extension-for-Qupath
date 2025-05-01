@@ -7,8 +7,28 @@ This is a QuPath extension
 
 ## Build and Install the extension
 
-### Set up the CircleNet environment
+#### install Docker
+```
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+```
 
+#### install Nvidia-Docker
+```
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+
+#### Get Glo-in-one V2 docker image
+```
+sudo docker pull hrlblab333/public:glo_in_one_v2
+```
 
 ### Building your extension
 Building the extension with Gradle should be pretty easy - you don't even need to install Gradle separately, because the 

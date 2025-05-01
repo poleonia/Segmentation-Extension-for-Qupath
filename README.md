@@ -1,5 +1,5 @@
 # QuPath extension for Glomerular Lesion Segmentation
-<img src="https://github.com/poleonia/Segmentation-Extension-for-Qupath/edit/main/Seg01.png" width="768">
+<img src="https://github.com/poleonia/Segmentation-Extension-for-Qupath/blob/main/Seg01.png" width="768">
 
 
 This is a QuPath extension for Weighted Circle Fusion(WCF)

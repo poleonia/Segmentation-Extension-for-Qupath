@@ -38,7 +38,7 @@ The extension here will install a new command `Java extension` under the `Extens
 
 
 ## Usage
-
+<img src="https://github.com/poleonia/Segmentation-Extension-for-Qupath/blob/main/Seg02.png" width="768">
 1.Drag the image into Qupath<br>
 2.Select  `Extensions`  >`Java extension` >  `Run GLO Seg`  from the menu bar.<br>
 

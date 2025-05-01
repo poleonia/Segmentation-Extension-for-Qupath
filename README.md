@@ -25,10 +25,12 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 sudo apt-get update
 sudo apt-get install -y nvidia-docker2
 
-#### Get Glo-in-one V2 docker image
+#### Get our docker image
+
 ```
 sudo docker pull hrlblab333/public:glo_in_one_v2
 ```
+
 
 ### Building your extension
 Building the extension with Gradle should be pretty easy - you don't even need to install Gradle separately, because the 
